@@ -1,0 +1,36 @@
+---
+version: "2.0"
+
+services:
+  site:
+    image: {username}/{image}
+    expose:
+      - port: 3000
+        as: 80
+        accept:
+          - YOURDOMAIN.COM
+        to:
+          - global: true
+
+profiles:
+  compute:
+    site:
+      resources:
+        cpu:
+          units: 0.1
+        memory:
+          size: 512Mi
+        storage:
+          size: 512Mi
+  placement:
+    site:
+      pricing:
+        site:
+          denom: uakt
+          amount: 100
+
+deployment:
+  site:
+    site:
+      profile: site
+      count: 1
