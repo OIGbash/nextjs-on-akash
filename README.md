@@ -75,8 +75,7 @@ services:
 Alternatively, you can use the image I've created for this deployment example: oigbash/nextjs-on-akash.
 ![edit manifest](/images/edit-manifest.png)
 
-1. Create your deployment, submit the transaction and wait for bids to come in. You may need to tweak the default gas or fees settings if you have any issues submitting the transaction. If you are having any trouble with the Akash steps, you can ask in the [Akash Discord server](https://discord.gg/XaBNMkX5nn) or [Akashlytics Discord server](https://discord.gg/f46E78S3qw).
-Please note, as this is a marketplace, there are different providers with different levels of reliability and service. Choose and accept a bid, and the provider will deploy your app.
+1. Create your deployment, submit the transaction and wait for bids to come in. You may need to tweak the default gas or fees settings if you have any issues submitting the transaction. As of writing this, the fee needs to be manually changed to 0.015 instead of the 0.005 that is entered by default in the Akashlytics app. If you are having any trouble with the Akash steps, you can ask in the [Akash Discord server](https://discord.gg/XaBNMkX5nn) or [Akashlytics Discord server](https://discord.gg/f46E78S3qw).
 1. After a few seconds, you'll see a list of bids from different providers. You can browse the providers and choose from enterprise-tier data centers or community-level contributors. Choose the provider that provides you the best value for your needs. That's the beauty of using Akash! Accept the bid, submit the transaction, and wait for the deployment.
 1. After about 30 seconds, the deployment should be ready. You'll see a 1 in the "Available" field indicating that you have 1 live deployment. You'll also see the URL that the provider has generated for your deployment, as shown below. Take note of that link, as you'll need it to configure SSL. You can also follow that link to see your site, live over the Akash network!
 
